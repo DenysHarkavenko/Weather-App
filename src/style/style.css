@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("../font/Rubik-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../font/Rubik-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../font/Rubik-Medium.ttf") format("truetype");
+    font-weight: medium;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    font-family: 'Rubik';
+    font-weight: normal;
+}
+
+
+
+
