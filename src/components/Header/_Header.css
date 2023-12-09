@@ -1,5 +1,5 @@
 .header{
-    height: 150px;
+    height: 200px;
     background: linear-gradient(to right,  #76db99 0%,#28add7 100%);
 }
 
@@ -15,21 +15,23 @@
 
 .header__title{
     color: white;
+    font-size: 42px;
 }
 
 .header__form *{
     margin: 0 10px;
+    font-size: 16px;
 }
 
 .header__form-input{
-    padding: 10px 10px;
+    padding: 15px;
     width: 300px;
     border: none;
     border-radius: 5px;
 }
 
 .header__form-btn{
-    padding: 10px 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     background-color: #C16969;

@@ -28,6 +28,21 @@ html,
 body{
     font-family: 'Rubik';
     font-weight: normal;
+    min-height: 100%;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main{
+    background-color: #eee;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

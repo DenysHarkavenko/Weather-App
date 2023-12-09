@@ -1,0 +1,12 @@
+.footer{
+    height: 60px;
+    background: linear-gradient(to right,  #76db99 0%,#28add7 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__title{
+    font-size: 20px;    
+}
