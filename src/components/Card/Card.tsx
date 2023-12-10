@@ -24,7 +24,7 @@ export function Card({city}: any){
         case 6:
             day = 'Saturday'
             break
-        case 7:
+        case 0:
             day = 'Sunday'
             break
         default:
@@ -43,7 +43,10 @@ export function Card({city}: any){
             </div>
             <div className="card__bottom">
                 <p>{city.current.condition.text}</p>
-                <p>Feels like: {city.current.feelslike_c}°</p>
+                <div className="card__bottom-inf">
+                    <p>Wind speed(km/h): {city.current.wind_kph}</p>
+                    <p>Feels like: {city.current.feelslike_c}°</p>  
+                </div>  
             </div>
         </div>
     )

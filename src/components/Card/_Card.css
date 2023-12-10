@@ -1,13 +1,28 @@
 .card{
     height: 350px;
     width: 550px;
-    background-color: #fff;
+    background-color: #f7f8de;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 20px 20px 10px gray, -20px -20px 10px gray;
+    transition: all 1s linear;
 }
+
+.card.night{
+    color: white !important;
+    height: 350px;
+    width: 550px;
+    background-color: #01012f;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 20px 20px 10px gray, -20px -20px 10px gray;
+    transition: all 1s linear;
+}
+
 .card__header{
     margin: 20px;
     font-size: 38px;
@@ -18,8 +33,7 @@
 }
 
 .card__header-day{
-    font-size: 28px;
-    color: #2A2A2A;
+    font-size: 25px;
 }
 
 .card__main, .card__bottom{
@@ -37,8 +51,14 @@
     justify-content: space-between;
     margin: 20px;
     font-size: 20px;
-    color: gray;
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.card__bottom-inf{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
 }
 
 .card__main-icon{
