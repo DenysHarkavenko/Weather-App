@@ -5,9 +5,7 @@ import axios from 'axios';
 export function Header({ setCity }: any) {
   const API_KEY: string = '22e03cb4b1754deb92085549230812'
   const [country, setCountry] = useState('')
-  const card = document.querySelector('.card')
-
-  // I know problem with add class for dom element, but mb fix it later :)
+  
   async function getData(e:React.FormEvent): Promise<void> {
     e.preventDefault()
 
@@ -16,11 +14,10 @@ export function Header({ setCity }: any) {
         const response = await axios.get(`http://api.weatherapi.com/v1/current.json?aqi=no`, {
           params:{
             key: API_KEY,
-            q: country
+            q: country,
+            lang: ['uk', 'ru']
           }
         })
-
-        response.data.current.is_day === 0 ? card?.classList.add('night') : card?.classList.remove('night')
         setCity(response.data)
         setCountry('')
       } else{
