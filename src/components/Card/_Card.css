@@ -65,3 +65,12 @@
     width: 150px;
     height: 150px;
 }
+
+@media (max-width: 768px) {
+    .card{
+        margin: 0 20px;
+    }
+    .card__header{
+        font-size: 32px;
+    }   
+}
