@@ -14,8 +14,7 @@ export function Header({ setCity }: any) {
         const response = await axios.get(`http://api.weatherapi.com/v1/current.json?aqi=no`, {
           params:{
             key: API_KEY,
-            q: country,
-            lang: ['uk', 'ru']
+            q: country
           }
         })
         setCity(response.data)
@@ -24,7 +23,7 @@ export function Header({ setCity }: any) {
         window.alert('You have not entered the name of the city!')
       }
     } 
-    catch(e){
+    catch(e: any){
       console.error(`ERROR: ${e}`)
       window.alert('Wrong city name!')
     }

@@ -10,3 +10,16 @@
 .footer__title{
     font-size: 20px;    
 }
+.bx{
+    color: white;
+    font-size: 20px;
+}
+
+.bx{
+    margin-left: 10px;
+}
+
+.footer__nav-list{
+    display: flex;
+    list-style: none;
+}
