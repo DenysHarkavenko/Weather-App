@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header/Header';
-import './style/style.css'
-import { Card } from './components/Card/Card';
+import { Main } from './components/Main/Main';
 import { Footer } from './components/Footer/Footer';
+import './style/style.css'
+
 
 function App() {
   const [city, setCity] = useState({})
@@ -12,12 +13,12 @@ function App() {
       <Header setCity={setCity} />
       <main className='main'>
       {Object.keys(city).length !== 0 && (
-        <Card city={city} />
+        <Main city={city} />
       )}
       </main>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
