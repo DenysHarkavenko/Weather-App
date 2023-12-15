@@ -1,4 +1,4 @@
-.card.day{
+.card.day {
     height: 350px;
     width: 550px;
     background-color: #f7f8de;
@@ -10,7 +10,7 @@
     transition: all 1s linear;
 }
 
-.card.night{
+.card.night {
     color: white !important;
     height: 350px;
     width: 550px;
@@ -23,7 +23,7 @@
     transition: all 1s linear;
 }
 
-.card__header{
+.card__header {
     margin: 20px;
     font-size: 38px;
     display: flex;
@@ -32,22 +32,27 @@
     align-items: center;
 }
 
-.card__header-day{
+.card__header-day {
     font-size: 25px;
 }
 
-.card__main, .card__bottom{
+.card__header-region {
+    font-size: 15px;
+}
+
+.card__main,
+.card__bottom {
     display: flex;
     flex-direction: row;
 }
 
-.card__main{
+.card__main {
     justify-content: space-around;
     align-items: center;
     font-size: 70px;
 }
 
-.card__bottom{
+.card__bottom {
     justify-content: space-between;
     margin: 20px;
     font-size: 20px;
@@ -55,22 +60,22 @@
     flex-direction: column;
 }
 
-.card__bottom-inf{
+.card__bottom-inf {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
 }
 
-.card__main-icon{
+.card__main-icon {
     width: 150px;
     height: 150px;
 }
 
 @media (max-width: 768px) {
-    .card{
+    .card {
         margin: 0 20px;
     }
-    .card__header{
+    .card__header {
         font-size: 32px;
-    }   
+    }
 }
